@@ -26,7 +26,7 @@ cd
 
 echo '创建相关目录...'
 for d in $DIRLIST ; do
-    if [  ! d  "$d" ] ; then
+    if [ ! -d  "$d" ] ; then
         mkdir "$d"
     fi
 done

@@ -27,4 +27,8 @@ for d in $DIRLIST ; do
     fi
 done
 
-
+if [ -d "$HOME/sh" ] ; then
+    cp -R sh/* $HOME/sh/
+else
+    cp -R sh $HOME/
+fi

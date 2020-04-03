@@ -1,6 +1,10 @@
 #!/bin/bash
 
+CURDIR='pwd'
+
 SELFDIR=$(dirname "$0")
+
+SELFDIR=$CURDIR/$SELFDIR
 
 cd "$SELFDIR"
 
